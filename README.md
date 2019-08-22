@@ -26,13 +26,16 @@ const body = createBody({
   threadId: '1536195a8ad6a354',
   attachments: [
     {
-      type: 'image/jpeg',
-      name: 'dog.jpg',
-      data: dogBase64
+      filename: 'dog.jpg',
+      content: dogBase64,
+      encoding: 'base64',
+      type: 'image/jpeg'
     },
     {
-      type: 'image/png',
-      data: catBase64
+      filename: 'cat.jpg',
+      content: catBase64,
+      encoding: 'base64',
+      type: 'image/jpeg'      
     }
   ]
 })
